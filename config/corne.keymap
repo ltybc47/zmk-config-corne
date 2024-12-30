@@ -60,8 +60,8 @@
 
             bindings = <
 &kp TAB    &kp Q           &kp W           &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I              &kp O            &kp P                    &kp BSPC
-&kp LCTRL  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H        &mt LCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA          &kp DOT          &kp FSLH                 &kp ESC
+&mo 5      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H        &mt LCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA          &kp DOT          &kp FSLH                 &lt 1 ESC
                                            &lt 4 LWIN        &mo 1        &kp SPACE    &lt 5 ENTER  &mo 2        &lt 3 LEFT_ALT
             >;
         };
@@ -114,12 +114,12 @@
             >;
         };
 
-        layer_5 {
+        numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp NUMBER_6  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3        &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans            &kp LC(BACKSPACE)  &kp LC(DELETE)  &trans       &trans    &trans  &kp N7  &kp N8  &kp N9        &trans  &trans
+&trans  &kp LS(LEFT_ALT)  &kp BACKSPACE      &kp DELETE      &trans       &trans    &trans  &kp N4  &kp N5  &kp NUMBER_6  &kp N0  &trans
+&trans  &trans            &trans             &kp K_COPY      &kp K_PASTE  &trans    &trans  &kp N1  &kp N2  &kp N3        &trans  &trans
+                                             &trans          &trans       &trans    &trans  &trans  &trans
             >;
         };
     };

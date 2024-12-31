@@ -114,7 +114,7 @@
             bindings = <
 &trans  &trans            &trans  &kp LC(BACKSPACE)  &kp LC(DELETE)  &trans        &trans  &kp N7  &kp N8  &kp N9        &trans  &trans
 &trans  &kp LS(LEFT_ALT)  &trans  &kp BACKSPACE      &kp DELETE      &kp INSERT    &trans  &kp N4  &kp N5  &kp NUMBER_6  &kp N0  &trans
-&trans  &trans            &trans  &kp K_COPY         &kp K_PASTE     &trans        &trans  &kp N1  &kp N2  &kp N3        &trans  &trans
+&trans  &trans            &trans  &kp LC(C)          &kp LC(V)       &trans        &trans  &kp N1  &kp N2  &kp N3        &trans  &trans
                                   &trans             &trans          &trans        &trans  &trans  &trans
             >;
         };

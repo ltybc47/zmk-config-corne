@@ -18,9 +18,9 @@
             bindings = <&kp ESC>;
         };
 
-        CtrlShift {
-            bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <15 16>;
+        Alt_F4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <19 21>;
         };
 
         AltShift {
@@ -102,10 +102,10 @@
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT_ARROW)  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans       &trans          &trans           &trans         &trans
+                        &trans  &trans  &trans    &trans              &trans       &trans
             >;
         };
 

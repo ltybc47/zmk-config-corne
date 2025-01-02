@@ -102,7 +102,7 @@
 
         arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME            &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &kp END        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT_ARROW)  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans       &trans          &trans           &trans         &trans
                         &trans  &trans  &trans    &trans              &trans       &trans

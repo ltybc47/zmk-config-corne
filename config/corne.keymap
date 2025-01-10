@@ -20,7 +20,7 @@
 
         Alt_F4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <19 21>;
+            key-positions = <9 7>;
         };
 
         AltShift {

@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -80,10 +79,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q           &kp W           &kp E             &kp R        &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O            &kp P                    &kp LEFT_BRACKET
+&lt 5 TAB  &kp Q           &kp W           &kp E             &kp R        &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O            &kp P                    &kp LEFT_BRACKET
 &mo 4      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G          &kp H        &mt LCTRL J          &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
 &kp LCTRL  &kp Z           &kp X           &kp C             &kp V        &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT          &kp FSLH                 &kp ESC
-                                           &lt 5 LEFT_WIN    &mo 1        &lt 6 SPACE    &lt 4 ENTER  &mo 3                &mo 2
+                                           &kp LEFT_GUI      &mo 1        &lt 6 SPACE    &lt 4 ENTER  &mo 3                &mo 2
             >;
         };
 
@@ -146,10 +145,10 @@
 
         navigation {
             bindings = <
-&trans                  &trans            &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(LC(RIGHT))       &kp LG(NUMBER_6)  &kp LG(NUMBER_7)    &kp LG(NUMBER_8)     &kp LG(NUMBER_9)  &kp LG(N0)          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(LC(LEFT_ARROW))  &kp LG(N1)        &kp LG(NUMBER_2)    &kp LG(NUMBER_3)     &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
-                                                              &trans               &trans            &trans              &trans  &trans  &trans
+&trans                  &trans            &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans            &trans              &trans  &trans                &trans                &trans  &trans  &trans
+&kp LG(LC(RIGHT))       &kp LG(NUMBER_6)  &kp LG(NUMBER_7)    &kp LG(NUMBER_8)     &kp LG(NUMBER_9)  &kp LG(N0)          &trans  &kp LG(LC(NUMBER_1))  &kp LG(LC(NUMBER_2))  &trans  &trans  &trans
+&kp LG(LC(LEFT_ARROW))  &kp LG(N1)        &kp LG(NUMBER_2)    &kp LG(NUMBER_3)     &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &trans  &trans  &trans
+                                                              &trans               &trans            &trans              &trans  &trans                &trans
             >;
         };
     };

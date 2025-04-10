@@ -71,18 +71,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+        layer_7 {
             bindings = <
-&lt 5 TAB       &kp Q  &kp W  &kp E         &kp R  &mt GRAVE T    &kp Y        &kp U                &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&mo 4           &kp A  &kp S  &kp D         &kp F  &kp G          &kp H        &kp J                &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LEFT_GUI  &mo 1  &lt 6 SPACE    &lt 4 ENTER  &mo 3                &mo 2
+&lt 5 TAB  &kp Q           &kp W           &kp E             &kp R        &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O            &kp P                    &kp LEFT_BRACKET
+&mo 4      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G          &kp H        &mt LCTRL J          &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
+&kp LCTRL  &kp Z           &kp X           &kp C             &kp V        &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT          &kp FSLH                 &kp ESC
+                                           &kp LEFT_GUI      &mo 1        &lt 6 SPACE    &lt 4 ENTER  &mo 3                &mo 2
             >;
         };
 
@@ -152,12 +146,18 @@
             >;
         };
 
-        layer_7 {
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
             bindings = <
-&lt 5 TAB  &kp Q           &kp W           &kp E             &kp R        &mt GRAVE T    &kp Y        &kp U                &kp I              &kp O            &kp P                    &kp LEFT_BRACKET
-&mo 4      &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G          &kp H        &mt LCTRL J          &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON  &kp SQT
-&kp LCTRL  &kp Z           &kp X           &kp C             &kp V        &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA          &kp DOT          &kp FSLH                 &kp ESC
-                                           &kp LEFT_GUI      &mo 1        &lt 6 SPACE    &lt 4 ENTER  &mo 3                &mo 2
+&lt 5 TAB       &kp Q  &kp W  &kp E         &kp R  &mt GRAVE T    &kp Y        &kp U                &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&mo 4           &kp A  &kp S  &kp D         &kp F  &kp G          &kp H        &kp J                &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B          &kp N        &mt RIGHT_BRACKET M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                              &kp LEFT_GUI  &mo 1  &lt 6 SPACE    &lt 4 ENTER  &mo 3                &mo 2
             >;
         };
     };
